@@ -7,44 +7,47 @@ class App extends Component{
   render(){
     return(
       <>
-        <header className='hero-section'>
+        <header className='nav-section'>
             <div className='container'>
-              <a href='#logo'>CAR<span>ENTAL</span></a>
-              <nav className='nav-bar'>
-                <ul>
-                  <li><a href='#RENT'>RENT</a></li>
-                  <li><a href='#SHARE'>SHARE</a></li>
-                  <li><a href='#RIDE'>RIDE</a></li>
-                  <li><a href='#SERVICE'>SERVICE</a></li>
-                  <li><a href='#CONTACT'>CONTACT</a></li>
-                </ul>
-              </nav>
-              <div>
-                <button className='button'>
-                  Log in
-                </button>
-                <button className='button'>
-                  Log in
-                </button>
+              <div className='nav-bar'>
+                <a href='#logo' className='logo'>CAR<span>ENTAL</span></a>
+                <nav>
+                  <ul>
+                    <li><a href='#RENT'>RENT</a></li>
+                    <li><a href='#SHARE'>SHARE</a></li>
+                    <li><a href='#RIDE'>RIDE</a></li>
+                    <li><a href='#SERVICE'>SERVICE</a></li>
+                    <li><a href='#CONTACT'>CONTACT</a></li>
+                  </ul>
+                </nav>
+                <div>
+                  <button className='transp-btn'>
+                    Log in
+                  </button>
+                  <button className='btn'>
+                    Sign up
+                  </button>
+                </div>
+                
+                  <i class="fa-solid fa-bars"></i>
+                
               </div>
             </div>
         </header>
 
-        <main className='bg'>
-
-          
+        <main className='bg'>   
           <section className='hero-section'>
             <div className='container'>
-              <div className='even-columns'>
-                <div>
+              <div className='even-columns | hero-wrapper'>
+                <div className='hero-content'>
                   <h1>WE RENT THE HIGHEST CALIBER AUTOMOBILES</h1>
                   <p>Experience unrivaled luxury with our elite car rentals – where style meets performance for an extraordinary journey on the road.</p>
                   <div>
-                    <button>Rent Now</button>
-                    <button>Learn More</button>
+                    <button className='btn'>Rent Now</button>
+                    <button className='transp-btn'>Learn More</button>
                   </div>
                 </div>
-                <div>
+                <div className='hero-img'> 
                 
                   <img src='images/car.png' alt='hero-img' />
                 </div>
@@ -55,32 +58,30 @@ class App extends Component{
 
           <section>
             <div className='container card-sections'>
-                <div className='even-columns'>
-                  <div>
-                    <h3>Where to Pick Up</h3>
+                <div className='flex-wrap'>
+                  <div className='input-content'>
+                    <p>Where to Pick Up</p>
                     <div>
-                      <i class="fa-solid fa-location-dot"></i>
-                      
+                      <label><i class="fa-solid fa-location-dot"></i> </label> 
                       <input  placeholder='Entere Your location here' />
                     </div>
                   </div>
-                  <div>
-                    <h3>Pick Up Date</h3>
+                  <div className='input-content'>
+                    <p>Pick Up Date</p>
                     <div>
-                      <i class="fa-regular fa-calendar-days"></i>
+                      <label><i class="fa-regular fa-calendar-days"></i></label>
                       <input  placeholder='Entere Your location here' />
                     </div>
                   </div>
-                  <div>
-                    <h3>Return Date</h3>
+                  <div className='input-content'>
+                    <p>Return Date</p>
                     <div>
-                      <i class="fa-regular fa-calendar-days"></i>
-                      <input  placeholder='Entere Your location here' />
+                     <label htmlFor='calender'><i class="fa-regular fa-calendar-days"></i></label>
+                      <input id='calender' placeholder='Entere Your location here' />
                     </div>
                   </div>
-                  <div>
-                    <input  placeholder='Entere Your location here' />
-                    <i class="fa-solid fa-arrow-right"></i>
+                  <div className='search-btn'>
+                    <button className='btn'>search <i class="fa-solid fa-arrow-right"></i></button>
                   </div>
                 </div>              
             </div>
